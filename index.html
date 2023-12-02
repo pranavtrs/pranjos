@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hostel Login</h1>
+        
+        <form action="#">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+
+            <label for="userType">User Type:</label>
+            <select id="userType" name="userType">
+                <option value="administrator">Administrator</option>
+                <option value="student">Student</option>
+            </select>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <script>
+            const form = document.querySelector('form');
+            const userTypeSelect = document.getElementById('userType');
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const selectedUserType = userTypeSelect.value;
+
+                if (selectedUserType === 'administrator') {
+                    window.location.href = 'Adminpage.html';
+                } else if (selectedUserType === 'student') {
+                    window.location.href = 'studentpage.html';
+                } else {
+                    alert('Invalid user type selected.');
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

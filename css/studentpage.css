@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #b3d7ff, #e0f1ff);
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header img {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+h1 {
+  color: #4b6cb7;
+}
+
+.student-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.profile-image img {
+  max-width: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.profile-image img:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-details {
+  flex-grow: 1;
+}
+
+h2 {
+  color: #4b6cb7;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 15px;
+}
+
+ul li strong {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #4b6cb7;
+}
+
+.mess-fee-details,
+.attendance-details,
+.notice-board {
+  margin-bottom: 40px;
+}
+
+.notices a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.notices a:hover {
+  color: #4b6cb7;
+}
